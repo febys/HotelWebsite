@@ -43,7 +43,28 @@ body {
 .dine:after {
   margin-left: 10px
 }
-	  
+.map{
+  
+  width:100%;
+  height:400px;
+  background-color: #000;
+  display: inline-block;
+}
+.map-loc{
+  width:350px;
+  height:350px;
+  margin: 25px;
+  margin-right: 60px;
+ float: right;
+}
+.map-locL{
+  width:350px;
+  height:350px;
+  margin: 25px;
+  margin-left: 60px;
+ float: left;
+}
+
 @import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
 .navbar-brand {
   font-family: 'Montserrat', sans-serif;
