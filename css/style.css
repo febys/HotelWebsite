@@ -1,13 +1,11 @@
-
-
 body {
 	margin: 0;
-	
-
+  
 }
 .mainB{
   margin: auto;
   padding: 0%;
+  
 }
 .carousel{
 	padding-top: 40px;
@@ -189,6 +187,6 @@ nav{
 	widows: 100%;
 	height: 40px;
 	background-color: #003300;
-	
+	float: inline-end;
     
 }
