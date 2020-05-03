@@ -29,6 +29,8 @@
         <li class="active">
           <a href="contactus2.html">Contact</a>
         </li>
+			<li style="margin-right: -80px; margin-left: 45px;border:0.5px  solid black;border-radius: 8px; font-size: 13px; font-weight: 600;"> <a href="admin/index.php"><img src="images/user-solid.png" />  Admin</a></li>
+      
       </ul>
 		</nav>
 		</div>
