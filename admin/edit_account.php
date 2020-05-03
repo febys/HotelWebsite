@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <?php
 	require_once 'validate.php';
-	require 'name.php';
 ?>
 <html lang = "en">
 	<head>
