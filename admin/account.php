@@ -31,9 +31,9 @@
 		<li><a href = "dineandlounge2.html">Dine and Lounge</a></li> 			
 		<li class="active"><a href = "reservation.php">Reservation</a></li> 
 		<li><a href = "rulesandregulation2.html">Rules and Regulation</a></li>
-		<a href="contactus2.html">Contact</a>
-		<li><a href = "logout.php">Administrator</a></li>
         <li class="active">
+		<a href="contactus2.html">Contact</a>
+			<li><a href = "logout.php">Administrator</a></li>
           
         </li>
       </ul>
