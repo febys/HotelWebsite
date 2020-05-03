@@ -11,11 +11,11 @@
 		<link rel = "stylesheet" type = "text/css" href = "../css/bootstrap.css " />
 		<link rel = "stylesheet" type = "text/css" href = "../css/style.css" />
 	</head>
+	
 	<br>
 	<br>
 	<br>
-	<br>
-    <body style = "background-image: url('images/bcg.png'); "></body>
+    <body style="background-color:#ffeaa7">
 <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
   <div class="container">
 		<div class="navbar-header">
@@ -23,16 +23,12 @@
 		</div>
 		<nav class="collapse-navbar" role="navigation">
 		<ul class="nav navbar-nav navbar-right">
-		<li><a href = "index2.html">Home</a></li> 
-		<li><a href = "aboutus.html">About Us</a></li> 
-		<li><a href = "gallery.html">Gallery</a></li>
-		<li><a href = "dineandlounge2.html">Dine and Lounge</a></li> 			
-		<li class="active"><a href = "reservation.php">Reservation</a></li> 
-		<li><a href = "rulesandregulation2.html">Rules and Regulation</a></li>
-        <li class="active">
-          <a href="contactus2.html">Contact</a>
-		</li>
-		<li style="margin-right: -80px; margin-left: 45px;border:0.5px  solid black;border-radius: 8px; font-size: 13px; font-weight: 600;"> <a href="admin/index.php"><img src="images/user-solid.png" />  Admin</a></li>
+		<li  class = "dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class = "glyphicon glyphicon-user"></i>  Administrator</a>
+					<ul class="dropdown-menu">
+						<li><a href="logout.php"><i class = "glyphicon glyphicon-off"></i> Logout</a></li>
+					</ul>
+				</li>
       </ul>
 		</nav>
   </div>
