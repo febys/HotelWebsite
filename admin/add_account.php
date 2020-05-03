@@ -64,7 +64,7 @@
 							<button name = "add_account" class = "btn btn-info form-control"><i class = "glyphicon glyphicon-save"></i> Saved</button>
 						</div>
 					</form>
-					<?php require_once 'add_query_account.php'?>
+					<?php require 'add_query_account.php'?>
 				</div>
 			</div>
 		</div>
