@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<?php require_once "connect.php"?>
+<?php
+	require_once 'validate.php';
+?>
 <html lang = "en">
 	<head>
 		<title>Hotel PALAZZO</title>
@@ -12,49 +14,32 @@
 <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
   <div class="container">
 		<div class="navbar-header">
-		<a href="index2.html" class="navbar-brand">Hotel PALAZZO</a>
+		<a href="./" class="navbar-brand">Hotel PALAZZO</a>
 		</div>
-</header>
-<br><br><br><br><br>
-<div class= "mainB">
-	<div class = "container">
-	
-		<div class = "col-md-4"></div>
-		<div class = "col-md-4">
-		
-			<div class = "panel panel-danger">
-				<div class = "panel-heading">
-					
-					<h4>Administrator</h4>
-				</div>
+			<ul class = "nav navbar-nav pull-right ">
+			<li class = "active"><a href = "home.php">Home</a></li>
+			<li><a href = "reserve.php">Reservation</a></li>
+			<li><a href = "room.php">Room</a></li>			
+				<li class = "dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class = "glyphicon glyphicon-user"></i> Administrator</a>
+					<ul class="dropdown-menu">
+						<li ><a href="logout.php"><i class = "glyphicon glyphicon-off"></i> Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	</header>
+
+			
 				<div class = "panel-body">
-					<form method = "POST">
-						<div class = "form-group">
-							<label>Username</label>
-							<input type = "text" name = "username" class = "form-control" required = "required" />
-						</div>
-						<div class = "form-group">
-							<label>Password</label>
-							<input type = "password" name = "password" class = "form-control" required = "required" />
-						</div>
-						<br />
-						<div class = "form-group">
-							<button name = "login" class = "form-control btn btn-primary"><i class = "glyphicon glyphicon-log-in"> Login</i></button>
-						</div>
-					</form>
-					<?php require_once 'login.php'?>
+					<center><img src = "../images/back.jpg" width="700px" heigh="600px" /></center>
 				</div>
-			</div>
-		</div>
-		<div class = "col-md-4"></div>
-	</div>	
+	<footer>
+	<div style = "text-align:right; height: 30px; background-color: #003300;"  class = "navbar navbar-default navbar-fixed-bottom">
+		<label style="color:white;  margin: 12px; margin-right: 20px; ">&copy; Copyright: DEFSA </label>
 	</div>
-</div>
-	<br />
-	<br />
-	<div style = "text-align:right;height: 40px; background-color: #003300;" class = "navbar navbar-default navbar-fixed-bottom">
-	<label style="color:white;  margin: 12px; margin-right: 20px; ">&copy; Copyright: DEFSA </label>
-	</div>
+	</footer>
 </body>
 <script src = "../js/jquery.js"></script>
 <script src = "../js/bootstrap.js"></script>	
