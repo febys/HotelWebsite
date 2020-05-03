@@ -11,35 +11,24 @@
 		<link rel = "stylesheet" type = "text/css" href = "../css/bootstrap.css " />
 		<link rel = "stylesheet" type = "text/css" href = "../css/style.css" />
 	</head>
-<body>
-	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+<body style="background-color:#ffeaa7">
+<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
   <div class="container">
 		<div class="navbar-header">
-		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button> 
-		<a href="./" class="navbar-brand">Hotel PALAZO</a>
+		<a href="index2.html" class="navbar-brand">Hotel PALAZZO</a>
 		</div>
 		<nav class="collapse-navbar" role="navigation">
 		<ul class="nav navbar-nav navbar-right">
-		<li><a href = "index2.html">Home</a></li> 
-		<li><a href = "aboutus.html">About Us</a></li> 
-		<li><a href = "gallery.html">Gallery</a></li>
-		<li><a href = "dineandlounge2.html">Dine and Lounge</a></li> 			
-		<li class="active"><a href = "reservation.php">Reservation</a></li> 
-		<li><a href = "rulesandregulation2.html">Rules and Regulation</a></li>
-        <li class="active">
-		<a href="contactus2.html">Contact</a>
-			<li><a href = "logout.php">Administrator</a></li>
-          
-        </li>
+		<li  class = "dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class = "glyphicon glyphicon-user"></i>  Administrator</a>
+					<ul class="dropdown-menu">
+						<li><a href="logout.php"><i class = "glyphicon glyphicon-off"></i> Logout</a></li>
+					</ul>
+				</li>
       </ul>
 		</nav>
-	</div>
-	</header>
+  </div>
+</header>
 <br>
 <br>
 
