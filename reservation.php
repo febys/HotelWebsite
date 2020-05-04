@@ -16,11 +16,11 @@
 <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
   <div class="container">
 		<div class="navbar-header">
-		<a href="index2.html" class="navbar-brand">Hotel PALAZZO</a>
+		<a href="index.html" class="navbar-brand">Hotel PALAZZO</a>
 		</div>
 		<nav class="collapse-navbar" role="navigation">
 		<ul class="nav navbar-nav navbar-right">
-		<li><a href = "index2.html">Home</a></li> 
+		<li><a href = "index.html">Home</a></li> 
 		<li><a href = "aboutus.html">About Us</a></li> 
 		<li><a href = "gallery.html">Gallery</a></li>
 		<li><a href = "dineandlounge2.html">Dine and Lounge</a></li> 			

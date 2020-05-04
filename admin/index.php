@@ -12,7 +12,7 @@
 <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
   <div class="container">
 		<div class="navbar-header">
-		<a href="index2.html" class="navbar-brand">Hotel PALAZZO</a>
+		<a href="index.html" class="navbar-brand">Hotel PALAZZO</a>
 		</div>
 </header>
 <br><br><br><br><br>
