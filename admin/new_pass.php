@@ -1,3 +1,4 @@
+<?php include('app_logic.php'); ?>
 <!DOCTYPE html>
 <?php require_once "connect.php"?>
 <html lang = "en">
@@ -28,23 +29,22 @@
 					<h4>Administrator</h4>
 				</div>
 				<div class = "panel-body">
-				<form method = "POST">
-						<div class = "form-group">
-						<div class="form-group">
-							<label>Username </label>
-							<input type = "text"  name="username" class = "form-control" required = "required" />
-						</div>
-						<div class = "form-group">
-							<label>Password</label>
-							<input type = "password" name = "password" class = "form-control" required = "required" />
-						</div>
-						<br />
-						<div class = "form-group">
-							<button name = "login" class = "form-control btn btn-primary"><i class = "glyphicon glyphicon-log-in"> Login</i></button>
-						</div>
-						<p><a href="enter_email.php">Forgot your password?</a></p>
-					</form>
-					<?php require_once 'login.php'?>
+                <form class="login-form" action="new_pass.php" method="post">
+                    <h2 class="form-title">New password</h2>
+                    <!-- form validation messages -->
+                    <?php include('messages.php'); ?>
+                    <div class="form-group">
+                        <label>New password</label>
+                        <input type="password" name="new_pass" class = "form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm new password</label>
+                        <input type="password" name="new_pass_c" class = "form-control">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" name="new_password" class = "form-control btn btn-primary"><i class = "glyphicon glyphicon-log-in"> Submit</i></button>
+                    </div>
+                </form>
 				</div>
 			</div>
 		</div>

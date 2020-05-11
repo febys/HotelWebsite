@@ -15,7 +15,7 @@
 <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
   <div class="container">
 		<div class="navbar-header">
-		<a href="index.html" class="navbar-brand">Hotel PALAZZO</a>
+		<a href="home.php" class="navbar-brand">Hotel PALAZZO</a>
 		</div>
 		<nav class="collapse-navbar" role="navigation">
 		<ul class="nav navbar-nav navbar-right">
