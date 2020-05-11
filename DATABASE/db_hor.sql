@@ -1,11 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.7.0
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Dec 08, 2017 at 04:32 AM
--- Server version: 10.1.24-MariaDB
--- PHP Version: 7.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -13,10 +5,7 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+
 
 --
 -- Database: `db_hor`
@@ -32,15 +21,17 @@ CREATE TABLE `admin` (
   `admin_id` int(11) NOT NULL,
   `name` varchar(30) NOT NULL,
   `username` varchar(24) NOT NULL,
-  `password` varchar(24) NOT NULL
+  `password` varchar(24) NOT NULL,
+  `email` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `admin`
 --
 
-INSERT INTO `admin` (`admin_id`, `name`, `username`, `password`) VALUES
-(1, 'Administrator', 'Admin', 'admin');
+INSERT INTO `admin` (`admin_id`, `name`, `username`, `password`, `email`) VALUES
+(1, 'Administrator', 'Admin', 'admin', 'febys.hoxha@fshnstudent.info'),
+(7, 'sonja', 'sonja', 'sonja', 'sonj.mici@fshnstudent.info');
 
 -- --------------------------------------------------------
 
@@ -56,6 +47,33 @@ CREATE TABLE `guest` (
   `address` varchar(50) NOT NULL,
   `contactno` varchar(13) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `guest`
+--
+
+INSERT INTO `guest` (`guest_id`, `firstname`, `middlename`, `lastname`, `address`, `contactno`) VALUES
+(1, 'Febys', 'Hoxha', 'Hoxha', 'Ylli i Kuq', '5435834857');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `password_resets`
+--
+
+CREATE TABLE `password_resets` (
+  `id` int(11) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `token` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `password_resets`
+--
+
+INSERT INTO `password_resets` (`id`, `email`, `token`) VALUES
+(NULL, 'febys.hoxha@fshnstudent.info', 'b2c8eb2a4af42661a70392c8923a10005d438b783b588e26d3f0cb23274a7c1506666c20e956a9c23b6005b51c73cdc2b5e5'),
+(NULL, 'febys.hoxha@fshnstudent.info', '9efe154e1628acd2dab796d4cdf49afcd97c7bd54226992e878f373a4a925fb8ae638c785e9075c7b89ca8fd03ea931fc4a2');
 
 -- --------------------------------------------------------
 
@@ -77,9 +95,9 @@ CREATE TABLE `room` (
 INSERT INTO `room` (`room_id`, `room_type`, `price`, `photo`) VALUES
 (1, 'Standard', '79', '1.jpg'),
 (2, 'Superior', '99', '3.jpg'),
-(3, 'Super Deluxe', '139', '4.jpg'),
-(4, 'Jr. Suite', '179', '5.jpg'),
-(5, 'Executive Suite', '239', '6.jpg');
+(3, 'Super Deluxe', '129', '4.jpg'),
+(4, 'Jr. Suite', '169', '5.jpg'),
+(5, 'Executive Suite', '220', '6.jpg');
 
 -- --------------------------------------------------------
 
@@ -103,6 +121,13 @@ CREATE TABLE `transaction` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `transaction`
+--
+
+INSERT INTO `transaction` (`transaction_id`, `guest_id`, `room_id`, `room_no`, `extra_bed`, `status`, `days`, `checkin`, `checkin_time`, `checkout`, `checkout_time`, `bill`) VALUES
+(1, 1, 3, 0, 0, 'Pending', 0, '2020-05-04', '00:00:00', '0000-00-00', '00:00:00', '');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -117,6 +142,12 @@ ALTER TABLE `admin`
 --
 ALTER TABLE `guest`
   ADD PRIMARY KEY (`guest_id`);
+
+--
+-- Indexes for table `password_resets`
+--
+ALTER TABLE `password_resets`
+  ADD UNIQUE KEY `token` (`token`);
 
 --
 -- Indexes for table `room`
@@ -138,23 +169,25 @@ ALTER TABLE `transaction`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
 --
 -- AUTO_INCREMENT for table `guest`
 --
 ALTER TABLE `guest`
-  MODIFY `guest_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `guest_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT for table `room`
 --
 ALTER TABLE `room`
   MODIFY `room_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
 --
 -- AUTO_INCREMENT for table `transaction`
 --
 ALTER TABLE `transaction`
-  MODIFY `transaction_id` int(11) NOT NULL AUTO_INCREMENT;COMMIT;
+  MODIFY `transaction_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
