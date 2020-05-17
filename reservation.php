@@ -55,7 +55,9 @@
 							<h3 style = "color:#003300;  font-weight: bold;"><?php echo $fetch['room_type']?></h3>
 							<h4 style = "color:#DAA520;"><?php echo "Price: ".$fetch['price']." Euro(€)" ?></h4>
 							<br /><br /><br /><br /><br /><br />
-							<a style = "margin-left:580px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);" href = "add_reserve.php?room_id=<?php echo $fetch['room_id']?>" class = "btn btn-info"><i class = "glyphicon glyphicon-list"></i> Reserve</a>
+							<a style = "margin-left:580px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);" href = "add_reserve.php?room_id=<?php echo $fetch['room_id']?>" class = "btn btn-info"><i class = "glyphicon glyphicon-list">
+							
+							</i> Reserve</a>
 						</div>
 					</div>
 				<?php
