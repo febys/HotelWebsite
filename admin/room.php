@@ -36,7 +36,7 @@
 			<li><a href = "home.php">Home</a></li>
 			<li><a href = "account.php">Accounts</a></li>
 			<li><a href = "reserve.php">Reservation</a></li>
-			<li><a href = "room.php">Room</a></li>			
+			<li class = "active"><a href = "room.php">Room</a></li>			
 		</ul>	
 	</div>
 	<br />
